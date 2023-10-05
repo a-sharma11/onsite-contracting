@@ -1,0 +1,18 @@
+.onsite__component_box_layout{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.onsite__component_box_layout_left{
+    flex:1;
+    background-color: var(--construction-yellow, #FFB400);
+}
+
+.onsite__component_box_layout_right {
+    flex:2;
+    background: var(--construction-black, #F7F7F7);
+}
+
+.onsite__component_box_layout_right_top_heading img{
+    height: 2vh;
+}

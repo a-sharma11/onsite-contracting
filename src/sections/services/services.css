@@ -1,0 +1,61 @@
+.onsite__services-container {
+    padding-top: 2rem;
+    
+}
+
+.onsite__services-container_service_list{
+    padding-top: 2rem;
+}
+.onsite__services-container_service_list_col{
+    display: flex;
+    justify-content:left;
+}
+
+.onsite__services-container_service_list_icon img{
+    height: 8vh;
+}
+
+.onsite__services-container_service_list_txt{
+    padding-left: 1rem;
+}
+
+.onsite__services-container_service_list_txt h3 {
+    color: var(--construction-black, #2A2A2A);
+    font-family: Rubik;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1vh;
+}
+
+.onsite__services-container_service_list_txt p {
+    color: var(--construction-gray, #666);
+    font-family: Open Sans;
+    font-size: 0.9vw;
+    font-style: normal;
+    line-height: 2vh;
+}
+
+.onsite__services-container_heading{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.onsite__services-container_heading img{
+    height: 1vh;
+    align-self: start;
+}
+
+.onsite__services-container_heading h2{
+    color: var(--construction-black, #2A2A2A);
+    font-family: Rubik;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 21.07px; /* 126% */
+}
+
+div.onsite_App_Services.row{
+    padding-top: 2rem;
+}

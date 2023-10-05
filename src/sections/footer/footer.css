@@ -1,0 +1,46 @@
+.onsite__sections_footer {
+    background: var(--construction-black, #2A2A2A);
+    padding: 2rem;
+    display: flex;
+}
+
+.onsite__sections_footer_contact {
+    display: flex;
+    flex-direction: column;
+    flex:1
+
+}
+.onsite_App_footer_contact img{
+    height: 8vh;
+}
+
+.onsite_App_footer_reviews h4,
+.onsite_App_footer_contact h4, p, a{
+    text-decoration: none;
+    color: white;
+}
+
+.onsite_App_footer_contact_address{
+    display: flex;
+    align-items: center;
+}
+
+.onsite_App_footer_reviews {
+    flex:2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3 rem;
+    margin: 0 1rem 0 2rem ;
+}
+
+.onsite_App_footer_reviews_div {
+    border-style: solid;
+    border-color: #FFB400;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    height: 100%;
+}

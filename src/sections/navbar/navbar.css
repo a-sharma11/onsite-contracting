@@ -1,0 +1,52 @@
+
+.onsite__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+}
+
+.onsite__navbar-pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.onsite__navbar_left{
+    cursor: pointer;
+}
+
+.onsite__navbar_left img{
+    height: 6vh;
+    width: 10vw;
+}
+.onsite__navbar_pages_phone,
+.onsite__navbar_pages_hours,
+.onsite__navbar_pages_email{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.onsite__navbar_pages_phone p,
+.onsite__navbar_pages_hours p,
+.onsite__navbar_pages_email a,
+.onsite__navbar_link {
+    text-decoration: none;
+    color: black;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0 1rem;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+.onsite__navbar_left:hover,
+.onsite__navbar_link:hover{
+    border-bottom: 2px solid rgb(221, 174, 18);
+}
+

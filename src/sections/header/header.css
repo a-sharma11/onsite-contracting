@@ -1,0 +1,33 @@
+.onsite__header-container_background{
+    background: no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.onsite__header-container_background_content {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.onsite__header-container_background_content img{
+    height: 1vh;
+    width: 20vw;
+}
+
+.onsite__header-container_background_content p {
+    margin-top: 2rem;
+    color: #f1f2db;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.onsite__header-container_background_content_button {
+    margin-top: 2rem;
+}

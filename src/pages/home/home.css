@@ -1,0 +1,17 @@
+.onsite__main-lower-content_o {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.onsite_App_footer {
+    height: 25vh;
+    background: var(--construction-black, #2A2A2A);
+    margin: 1rem;
+    color: white;
+}
+
+.onsite_App_footer img{
+    height: 12vh;
+    padding: 1rem;
+}

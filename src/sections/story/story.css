@@ -1,0 +1,21 @@
+.onsite__sections_ourStory_description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.onsite__sections_ourStory_description img {
+    height: 30vh;
+    width: 100%;
+}
+
+.onsite__sections_ourStory_description p {
+    margin: 0 0 0 2rem;
+    color: #000;
+    font-size: 0.8vw;
+}
+
+.onsite__sections_ourStory {
+    display: flex;
+}

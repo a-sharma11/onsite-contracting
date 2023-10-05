@@ -1,0 +1,19 @@
+.onsite__sections_tags_item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem;
+}
+
+.onsite__sections_tags_item_text{
+    background: rgba(0, 0, 0, 0.4);
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.onsite__sections_tags_item_text h2{
+    text-align: center;
+    color: white;
+}
