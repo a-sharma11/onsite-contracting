@@ -29,8 +29,8 @@
     text-align: left;
 }
 
-.onsite__component_features_list_heading img{
-    margin: 0 1rem 0 0;
+.onsite__component_features_list_heading h3{
+    padding-left: 1rem;
 }
 
 .onsite__component_features_list p {

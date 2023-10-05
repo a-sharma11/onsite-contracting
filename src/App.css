@@ -42,11 +42,3 @@ a {
     -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-
-.onsite_App_main {
-  padding: 0 15rem 0 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  justify-content: center;
-}

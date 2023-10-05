@@ -32,7 +32,7 @@ const Footer = () => {
     <div className="onsite__sections_footer">
       <div className="onsite_App_footer_contact">
         <Image src={onSiteLogoWhite} />
-        <h4>Contact Us</h4>
+        <h4 style={{ paddingTop: "1rem" }}>Contact Us</h4>
         {contactMethods.map((method, index) => (
           <div className="onsite_App_footer_contact_address" key={index}>
             {<method.icon color="#FFB400" size="1.5vw" />}

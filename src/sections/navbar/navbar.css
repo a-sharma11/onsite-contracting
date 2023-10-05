@@ -13,20 +13,17 @@
     justify-content: flex-end;
 }
 
-.onsite__navbar_left{
-    cursor: pointer;
-}
-
 .onsite__navbar_left img{
     height: 6vh;
-    width: 10vw;
+    width: 12vw;
+    cursor: pointer;
 }
 .onsite__navbar_pages_phone,
 .onsite__navbar_pages_hours,
 .onsite__navbar_pages_email{
     display: flex;
     justify-content: space-between;
-    padding-left: 10px;
+
 }
 
 .onsite__navbar_pages_phone p,
@@ -36,17 +33,11 @@
     text-decoration: none;
     color: black;
     font-family: Manrope;
-    font-size: 18px;
+    font-size: 1vw;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    margin: 0 1rem;
-    line-height: 25px;
+    margin: 0 1vw;
     cursor: pointer;
-}
-
-.onsite__navbar_left:hover,
-.onsite__navbar_link:hover{
-    border-bottom: 2px solid rgb(221, 174, 18);
 }
 

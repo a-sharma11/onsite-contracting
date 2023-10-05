@@ -12,7 +12,8 @@
 }
 
 .onsite__services-container_service_list_icon img{
-    height: 8vh;
+    height:6vh;
+    width: 6vh;
 }
 
 .onsite__services-container_service_list_txt{
@@ -43,7 +44,8 @@
 }
 
 .onsite__services-container_heading img{
-    height: 1vh;
+    height: 2vh;
+    width: 5vw;
     align-self: start;
 }
 

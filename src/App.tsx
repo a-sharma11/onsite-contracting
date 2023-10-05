@@ -8,12 +8,12 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="onsite_App_main">
+      <Container>
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
-      </div>
+      </Container>
     </>
   );
 }
