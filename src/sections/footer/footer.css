@@ -20,9 +20,12 @@
     color: white;
 }
 
-.onsite_App_footer_contact_address{
+.onsite_App_footer_contact_address{ 
     display: flex;
-    align-items: center;
+}
+
+.onsite_App_footer_contact_address p{
+    padding-left: 1rem;
 }
 
 .onsite_App_footer_reviews {

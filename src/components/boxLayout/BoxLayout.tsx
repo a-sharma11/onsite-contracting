@@ -13,7 +13,7 @@ interface BoxLayotProps {
 
 const BoxLayout = (boxLayoutProps: BoxLayotProps) => {
   return (
-    <Container className={boxLayoutProps.containerClassName}>
+    <div className={boxLayoutProps.containerClassName}>
       <div className="onsite__component_box_layout_left">
         {boxLayoutProps.leftContent}
       </div>
@@ -28,7 +28,7 @@ const BoxLayout = (boxLayoutProps: BoxLayotProps) => {
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
 

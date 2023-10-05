@@ -6,7 +6,7 @@ import { yellowBar, sampleImg2 } from "../../assets";
 const Header2 = () => {
   return (
     <div>
-      <Container className="onsite__header-container">
+      <div className="onsite__header-container">
         <Row>
           <Col>
             <div
@@ -34,7 +34,7 @@ const Header2 = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </div>
     </div>
   );
 };

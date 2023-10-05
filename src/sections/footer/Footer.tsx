@@ -1,4 +1,4 @@
-import { Carousel, Container, Image } from "react-bootstrap";
+import { Carousel, Image } from "react-bootstrap";
 import "./footer.css";
 import React from "react";
 import { onSiteLogoWhite } from "../../assets";
@@ -29,32 +29,30 @@ const testimonials = [
 
 const Footer = () => {
   return (
-    <Container>
-      <div className="onsite__sections_footer">
-        <div className="onsite_App_footer_contact">
-          <Image src={onSiteLogoWhite} />
-          <h4>Contact Us</h4>
-          {contactMethods.map((method, index) => (
-            <div className="onsite_App_footer_contact_address">
-              {<method.icon color="#FFB400" size="1.5vw" />}
-              <p>{method.text}</p>
-            </div>
-          ))}
-        </div>
-        <div className="onsite_App_footer_reviews">
-          <div className="onsite_App_footer_reviews_div">
-            <h4>Testimonials</h4>
-            <Carousel indicators={false}>
-              {testimonials.map((testimonial) => (
-                <Carousel.Item>
-                  <p>{testimonial}</p>
-                </Carousel.Item>
-              ))}
-            </Carousel>
+    <div className="onsite__sections_footer">
+      <div className="onsite_App_footer_contact">
+        <Image src={onSiteLogoWhite} />
+        <h4>Contact Us</h4>
+        {contactMethods.map((method, index) => (
+          <div className="onsite_App_footer_contact_address" key={index}>
+            {<method.icon color="#FFB400" size="1.5vw" />}
+            <p>{method.text}</p>
           </div>
+        ))}
+      </div>
+      <div className="onsite_App_footer_reviews">
+        <div className="onsite_App_footer_reviews_div">
+          <h4>Testimonials</h4>
+          <Carousel indicators={false}>
+            {testimonials.map((testimonial, index) => (
+              <Carousel.Item key={index}>
+                <p>{testimonial}</p>
+              </Carousel.Item>
+            ))}
+          </Carousel>
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
 

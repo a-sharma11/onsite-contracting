@@ -52,15 +52,24 @@ const servicesBottom = [
   },
 ];
 
-const getServices = (serviceList: any[], key: string) => {
+const getServices = (serviceList: any[]) => {
   return (
-    <Row className="onsite__services-container_service_list" key={key}>
-      {serviceList.map((svg) => (
-        <Col className="onsite__services-container_service_list_col">
-          <div className="onsite__services-container_service_list_icon">
-            <Image src={svg.svg} alt={svg.title} />
+    <Row className="onsite__services-container_service_list">
+      {serviceList.map((svg, index) => (
+        <Col
+          className="onsite__services-container_service_list_col"
+          key={"list_col-" + index}
+        >
+          <div
+            className="onsite__services-container_service_list_icon"
+            key={"list_icon-" + index}
+          >
+            <Image src={svg.svg} alt={svg.title} key={index} />
           </div>
-          <div className="onsite__services-container_service_list_txt">
+          <div
+            className="onsite__services-container_service_list_txt"
+            key={"list_txt-" + index}
+          >
             <h3>{svg.title}</h3>
             <p>{svg.description}</p>
           </div>
@@ -72,16 +81,16 @@ const getServices = (serviceList: any[], key: string) => {
 
 const Services = () => {
   return (
-    <Container>
+    <div>
       <div className="onsite__services-container">
         <div className="onsite__services-container_heading">
           <h2>Our Services</h2>
           <img src={yellowBar} alt="yellow bar" />
         </div>
-        {getServices(servicesTop, "servicesTop")}
-        {getServices(servicesBottom, "servicesBottom")}
+        {getServices(servicesTop)}
+        {getServices(servicesBottom)}
       </div>
-    </Container>
+    </div>
   );
 };
 

@@ -6,14 +6,14 @@ import { OurStory, OurWork, Tags, Footer } from "../../sections";
 
 const Home = () => {
   return (
-    <Container className="onsite_App_home">
+    <div className="onsite_App_home">
       <Header />
       <Services />
       <OurStory />
       <Tags />
       <OurWork />
       <Footer />
-    </Container>
+    </div>
   );
 };
 
