@@ -1,4 +1,4 @@
-import { Carousel, Image } from "react-bootstrap";
+import { Card, CardBody, CardGroup, Carousel, Image } from "react-bootstrap";
 import "./footer.css";
 import React from "react";
 import { onSiteLogoWhite } from "../../assets";
@@ -27,32 +27,59 @@ const testimonials = [
   "Onsite Contracting is the epitome of professionalism in the construction industry. We hired them for a major commercial construction project, and they demonstrated exceptional project management skills and a deep understanding of our needs. Their ability to adapt to changing circumstances and their unwavering dedication to meeting deadlines were impressive. I highly recommend Onsite Contracting for any construction project, big or small.",
 ];
 
+// const Footer = () => {
+//   return (
+//     <div className="onsite__sections_footer">
+//       <div className="onsite_App_footer_contact">
+//         <Image src={onSiteLogoWhite} />
+//         <h4 style={{ paddingTop: "1rem" }}>Contact Us</h4>
+//         {contactMethods.map((method, index) => (
+//           <div className="onsite_App_footer_contact_address" key={index}>
+//             {<method.icon color="#FFB400" size="1.5vw" />}
+//             <p>{method.text}</p>
+//           </div>
+//         ))}
+//       </div>
+//       <div className="onsite_App_footer_reviews">
+//         <div className="onsite_App_footer_reviews_div">
+//           <h4>Testimonials</h4>
+//           <Carousel indicators={false}>
+//             {testimonials.map((testimonial, index) => (
+//               <Carousel.Item key={index}>
+//                 <p>{testimonial}</p>
+//               </Carousel.Item>
+//             ))}
+//           </Carousel>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Footer;
+
 const Footer = () => {
   return (
-    <div className="onsite__sections_footer">
-      <div className="onsite_App_footer_contact">
-        <Image src={onSiteLogoWhite} />
-        <h4 style={{ paddingTop: "1rem" }}>Contact Us</h4>
-        {contactMethods.map((method, index) => (
-          <div className="onsite_App_footer_contact_address" key={index}>
-            {<method.icon color="#FFB400" size="1.5vw" />}
-            <p>{method.text}</p>
-          </div>
-        ))}
-      </div>
-      <div className="onsite_App_footer_reviews">
-        <div className="onsite_App_footer_reviews_div">
-          <h4>Testimonials</h4>
-          <Carousel indicators={false}>
-            {testimonials.map((testimonial, index) => (
-              <Carousel.Item key={index}>
-                <p>{testimonial}</p>
-              </Carousel.Item>
-            ))}
-          </Carousel>
+    <Card bg="dark">
+      <div style={{ display: "flex" }}>
+        <div style={{}}>
+          <Image src={onSiteLogoWhite} style={{ height: "3rem" }} />
+          <Card.Text
+            style={{ color: "white", textAlign: "center" }}
+          ></Card.Text>
+        </div>
+        <div>
+          {contactMethods.map((method, index) => (
+            <div style={{ display: "flex" }}>
+              {<method.icon color="#FFB400" size="1.5rem" />}
+              <Card.Text style={{ color: "white", textAlign: "center" }}>
+                {method.text}
+              </Card.Text>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </Card>
   );
 };
 

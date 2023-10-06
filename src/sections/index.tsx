@@ -4,4 +4,5 @@ export { default as Services } from "./services/Services";
 export { default as OurStory } from "./story/Story";
 export { default as OurWork } from "./work/Work";
 export { default as Tags } from "./tags/Tags";
+export { default as Testimonials } from "./testimonials/Testimonials";
 export { default as Footer } from "./footer/Footer";

@@ -4,6 +4,7 @@ import { NavBar } from "./sections";
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages";
 import "./App.css";
+import "react-multi-carousel/lib/styles.css";
 
 function App() {
   return (

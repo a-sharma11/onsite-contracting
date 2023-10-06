@@ -11,7 +11,7 @@ import {
 
 import { Container, Col, Row, Image, CardGroup, Card } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.

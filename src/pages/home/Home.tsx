@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row, Image, Carousel } from "react-bootstrap";
 import { Header, Services } from "../../sections";
 import "./home.css";
-import { OurStory, OurWork, Tags, Footer } from "../../sections";
+import { OurStory, OurWork, Tags, Testimonials, Footer } from "../../sections";
 
 const Home = () => {
   return (
@@ -12,6 +12,7 @@ const Home = () => {
       <OurStory />
       <Tags />
       <OurWork />
+      <Testimonials />
       <Footer />
     </div>
   );
