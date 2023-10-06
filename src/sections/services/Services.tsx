@@ -73,71 +73,41 @@ const servicesBottom = [
   },
 ];
 
-const getServices = (serviceList: any[]) => {
-  return (
-    <Row className="onsite__services-container_service_list">
-      {serviceList.map((svg, index) => (
-        <Col
-          className="onsite__services-container_service_list_col"
-          key={"list_col-" + index}
-        >
-          <div
-            className="onsite__services-container_service_list_icon"
-            key={"list_icon-" + index}
-          >
-            <Image src={svg.svg} alt={svg.title} key={index} />
-          </div>
-          <div
-            className="onsite__services-container_service_list_txt"
-            key={"list_txt-" + index}
-          >
-            <h3>{svg.title}</h3>
-            <p>{svg.description}</p>
-          </div>
-        </Col>
-      ))}
-    </Row>
-  );
-};
-
 const Services = () => {
   return (
-    <div>
-      <div className="onsite__services-container">
-        <div className="onsite__services-container_heading">
-          <Card.Title>Our Services</Card.Title>
-          <img src={yellowBar} alt="yellow bar" />
-        </div>
-        {/* {getServices(servicesTop)}
-        {getServices(servicesBottom)} */}
-        {/* <Row xs={2} md={3} className="g-4"> */}
-        <Carousel
-          responsive={responsive}
-          infinite={true}
-          autoPlay={true}
-          showDots={true}
-        >
-          {[...servicesTop, ...servicesBottom].map((service, index) => (
-            // <Col key={index} style={{ height: "12vh%", width: "30%" }}>
-            <div style={{ padding: "0.5em" }}>
-              <Card border="warning" bg="light">
-                <Card.Body>
-                  <Card.Img
-                    variant="top"
-                    src={service.svg}
-                    style={{ height: "6vh", width: "6vh" }}
-                  />
-                  <Card.Title>{service.title}</Card.Title>
-                  <Card.Text style={{ color: "black" }}>
-                    {service.description}
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </div>
-          ))}
-          {/* </Row> */}
-        </Carousel>
+    <div className="onsite__services-container">
+      <div className="onsite__services-container_heading">
+        <Card.Title>Our Services</Card.Title>
+        <Image src={yellowBar} alt="yellow bar" />
       </div>
+      <Carousel
+        responsive={responsive}
+        infinite={true}
+        autoPlay={true}
+        showDots={true}
+        removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
+      >
+        {[...servicesTop, ...servicesBottom].map((service, index) => (
+          <Card
+            border="warning"
+            bg="light"
+            style={{ margin: "0 0.5em 0 0.5em" }}
+          >
+            <Card.Body>
+              <Card.Img
+                variant="top"
+                src={service.svg}
+                style={{ height: "6vh", width: "6vh" }}
+                key={index}
+              />
+              <Card.Title>{service.title}</Card.Title>
+              <Card.Text style={{ color: "black" }}>
+                {service.description}
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        ))}
+      </Carousel>
     </div>
   );
 };

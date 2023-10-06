@@ -3,7 +3,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     background-color: var(--construction-yellow, #FFB400);
-    padding: 1rem;
     height: 100%;
     width: 100%;
 }
@@ -17,24 +16,25 @@
 .onsite__component_features_list_heading {
     display: flex;
     align-items: flex-start;
+    padding-bottom: 1rem;
 }
 
 
 .onsite__component_features_list_heading > * {
-    color: #000;
+    /* color: #000;
     font-size: 1vw;
     font-style: bold;
     font-weight: 500;
     font-weight: bolder;
-    text-align: left;
+    text-align: left; */
 }
 
 .onsite__component_features_list_heading h3{
-    padding-left: 1rem;
+    
 }
 
 .onsite__component_features_list p {
-    margin: 0 0 0 2rem;
+    /* margin: 0 0 0 2rem;
     color: #000;
-    font-size: 0.8vw;
+    font-size: 0.8vw; */
 }

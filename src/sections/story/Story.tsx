@@ -1,9 +1,9 @@
 import "./story.css";
 
 import { BoxLayout, Features } from "../../components";
-import { Image } from "react-bootstrap";
+import { Card, CardGroup, Image } from "react-bootstrap";
 import React from "react";
-import { lisaProfilePic } from "../../assets";
+import { lisaProfilePic, yellowBar } from "../../assets";
 
 const getDescriptions = () => {
   return (
@@ -47,16 +47,62 @@ const featuresList = [
   },
 ];
 
+// const OurStory = () => {
+//   return (
+//     <div>
+//       <BoxLayout
+//         leftContent={<Features features={featuresList} />}
+//         rightHeading="Our Story"
+//         rightContent={getDescriptions()}
+//         containerClassName="onsite__sections_ourStory"
+//       />
+//     </div>
+//   );
+// };
+
+// export default OurStory;
+
 const OurStory = () => {
   return (
-    <div>
-      <BoxLayout
-        leftContent={<Features features={featuresList} />}
-        rightHeading="Our Story"
-        rightContent={getDescriptions()}
-        containerClassName="onsite__sections_ourStory"
-      />
-    </div>
+    <CardGroup>
+      <Card style={{ background: "#FFB400", flex: 1 }}>
+        <Card.Body>
+          <Features features={featuresList} />
+        </Card.Body>
+      </Card>
+      <Card bg="light" style={{ flex: 2 }}>
+        <Card.Body>
+          <Card.Title>Our Story</Card.Title>
+          <Image src={yellowBar} style={{ height: "1vh" }} />
+          <div style={{ display: "flex" }}>
+            <Card.Text style={{ color: "black" }}>
+              At Onsite Contracting, our story is a testament to 25 years of
+              unwavering commitment to excellence in the construction business.
+              From our humble beginnings, we have evolved into a trusted name in
+              the industry, renowned for our dedication to crafting exceptional
+              homes and delivering top-notch renovation services. Our journey
+              has been marked by a relentless pursuit of quality and a passion
+              for transforming visions into reality. Over the years, we have
+              honed our skills, mastered our craft, and built a legacy of trust
+              with our clients. Our story is one of growth, innovation, and an
+              enduring commitment to creating spaces that inspire and endure.
+              With every project, we bring two and a half decades of expertise
+              to the forefront, ensuring that the homes we build and the
+              renovations we undertake stand as testaments to our unwavering
+              pursuit of excellence. At Onsite Contracting, our story is your
+              story—a story of enduring quality, craftsmanship, and a vision for
+              the future.
+            </Card.Text>
+
+            <Image
+              src={lisaProfilePic}
+              roundedCircle
+              style={{ height: "30vh", width: "15vw" }}
+            />
+          </div>
+        </Card.Body>
+      </Card>
+    </CardGroup>
   );
 };
 
