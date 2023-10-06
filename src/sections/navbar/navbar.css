@@ -1,3 +1,12 @@
+#onsite__navbar_pages_phone,
+#onsite__navbar_pages_hours,
+#onsite__navbar_pages_email{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+
 #navbar_brand_icon{
     width:40%
 }
@@ -5,8 +14,8 @@
 #onsite__navbar_collapse{
     width: 100%;
 }
-.onsite__navbar_pages_phone > span,
-.onsite__navbar_pages_email > span,
-.onsite__navbar_pages_hours > span{
+#onsite__navbar_pages_phone > span,
+#onsite__navbar_pages_email > span,
+#onsite__navbar_pages_hours > span{
     padding-left: 1rem;;
 }

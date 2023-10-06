@@ -45,7 +45,7 @@ const Navbar2 = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse>
         <Nav className="mr-auto" id="onsite__navbar_collapse">
-          <div className="onsite__navbar_pages_hours">
+          <div id="onsite__navbar_pages_hours">
             <Icon.ClockFill
               color="#FFB400"
               width="30"
@@ -53,7 +53,7 @@ const Navbar2 = () => {
             ></Icon.ClockFill>
             <Navbar.Text>MONDAY-FRIDAY 08:00 - 20:00</Navbar.Text>
           </div>
-          <div className="onsite__navbar_pages_phone">
+          <div id="onsite__navbar_pages_phone">
             <Icon.TelephoneOutboundFill
               color="#FFB400"
               width="30"
@@ -61,7 +61,7 @@ const Navbar2 = () => {
             ></Icon.TelephoneOutboundFill>
             <Navbar.Text>603.660.0866</Navbar.Text>
           </div>
-          <div className="onsite__navbar_pages_email">
+          <div id="onsite__navbar_pages_email">
             <Icon.EnvelopeAtFill
               color="#FFB400"
               width="30"

@@ -52,7 +52,7 @@
 .onsite__services-container_heading h2{
     color: var(--construction-black, #2A2A2A);
     font-family: Rubik;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 21.07px; /* 126% */

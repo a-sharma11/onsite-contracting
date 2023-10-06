@@ -9,7 +9,28 @@ import {
   yellowBar,
 } from "../../assets";
 
-import { Container, Col, Row, Image } from "react-bootstrap";
+import { Container, Col, Row, Image, CardGroup, Card } from "react-bootstrap";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 const servicesTop = [
   {
@@ -42,7 +63,7 @@ const servicesBottom = [
     svg: paintSvg,
     title: "Paint & Exterior",
     description:
-      "From curb appeal to awe-inspiring appeal, we paint your exterior dreams into vibrant reality.",
+      "Our paint and exterior services transform homes, delivering a fresh, vibrant look that enhances curb appeal and protects against weather damage.",
   },
   {
     svg: demoSvg,
@@ -84,11 +105,38 @@ const Services = () => {
     <div>
       <div className="onsite__services-container">
         <div className="onsite__services-container_heading">
-          <h2>Our Services</h2>
+          <Card.Title>Our Services</Card.Title>
           <img src={yellowBar} alt="yellow bar" />
         </div>
-        {getServices(servicesTop)}
-        {getServices(servicesBottom)}
+        {/* {getServices(servicesTop)}
+        {getServices(servicesBottom)} */}
+        {/* <Row xs={2} md={3} className="g-4"> */}
+        <Carousel
+          responsive={responsive}
+          infinite={true}
+          autoPlay={true}
+          showDots={true}
+        >
+          {[...servicesTop, ...servicesBottom].map((service, index) => (
+            // <Col key={index} style={{ height: "12vh%", width: "30%" }}>
+            <div style={{ padding: "0.5em" }}>
+              <Card border="warning" bg="light">
+                <Card.Body>
+                  <Card.Img
+                    variant="top"
+                    src={service.svg}
+                    style={{ height: "6vh", width: "6vh" }}
+                  />
+                  <Card.Title>{service.title}</Card.Title>
+                  <Card.Text style={{ color: "black" }}>
+                    {service.description}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </div>
+          ))}
+          {/* </Row> */}
+        </Carousel>
       </div>
     </div>
   );

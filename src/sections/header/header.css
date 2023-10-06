@@ -44,7 +44,7 @@
     height: 40vh;
 }
 
-#_onsite_header_card_overlay_ybar{
+#onsite_header_card_overlay_ybar{
     height: 1vh;
     width: 100%;
 }
@@ -52,12 +52,14 @@
 #onsite_header_card_title{
     color: white;
     text-align: center;
-    font-size: max(2vw, 2rem);
+    /* font-size: max(2vw, 2rem); */
+    font-size: 3vmax;
 }
 
 #onsite_header_card_text{
     color: #f1f2db;
-    font-size: max(1.2vw, 0.5rem);
+    font-size: max(1.2vw, 0.8em);
+    /* font-size: 1.2vmax; */
     margin-bottom: 20rem;
     text-align: center;
 }

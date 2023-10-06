@@ -6,10 +6,10 @@ import { yellowBar, sampleImg2 } from "../../assets";
 const Header = () => {
   return (
     <Card id="onsite_header_card">
-      <Card.Img src={sampleImg2} style={{ height: "100%" }}></Card.Img>
+      <Card.Img src={sampleImg2} style={{ height: "100%" }} />
       <Card.ImgOverlay id="onsite_header_card_overlay">
         <Image
-          id="_onsite_header_card_overlay_ybar"
+          id="onsite_header_card_overlay_ybar"
           src={yellowBar}
           alt="yellow bar"
         />
