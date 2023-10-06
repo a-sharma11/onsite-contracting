@@ -1,35 +1,5 @@
-
-.onsite__navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 2rem;
-}
-
-.onsite__navbar-pages{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.onsite__navbar_left img{
-    height: 100%;
-    width: 12vw;
-    cursor: pointer;
-}
-
 #navbar_brand_icon{
     width:40%
-}
-
-.onsite__navbar_pages_phone,
-.onsite__navbar_pages_hours,
-.onsite__navbar_pages_email{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
 }
 
 #onsite__navbar_collapse{

@@ -3,7 +3,9 @@
     background-size: cover;
     color: white;
 }
-
+#onsite__header_image_background_div{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .onsite__header-container_background_content {
     background-color: rgba(0, 0, 0, 0.2);
     height: 40vh;
@@ -30,4 +32,33 @@
 
 .onsite__header-container_background_content_button {
     margin-top: 2rem;
+}
+
+
+#onsite_header_card_overlay{
+    background-color: rgba(0, 0, 0, 0.3);
+   
+}
+
+#onsite_header_card {
+    height: 40vh;
+}
+
+#_onsite_header_card_overlay_ybar{
+    height: 1vh;
+    width: 100%;
+}
+
+#onsite_header_card_title{
+    color: white;
+    text-align: center;
+    font-size: 5vh;
+    font-weight: 700;
+}
+
+#onsite_header_card_text{
+    color: #f1f2db;
+    font-weight: 500;
+    font-size: 2vh;
+    text-align: center;
 }
