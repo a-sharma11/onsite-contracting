@@ -1,9 +1,9 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Image, Row, Col, Button } from "react-bootstrap";
 import "./header.css";
 
 import { yellowBar, sampleImg2 } from "../../assets";
 
-const Header2 = () => {
+const Header = () => {
   return (
     <div>
       <div className="onsite__header-container">
@@ -14,7 +14,7 @@ const Header2 = () => {
               style={{ backgroundImage: `url(${sampleImg2})` }}
             >
               <div className="onsite__header-container_background_content">
-                <img src={yellowBar} alt="yellow bar" />
+                <Image src={yellowBar} alt="yellow bar" />
                 <h1>Onsite Contracting</h1>
                 <p>
                   Transforming Southern New Hampshire one home at a time, Onsite
@@ -39,4 +39,4 @@ const Header2 = () => {
   );
 };
 
-export default Header2;
+export default Header;
